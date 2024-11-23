@@ -1,0 +1,27 @@
+services:
+  app:
+    container_name: event-booking
+    build: ./
+    depends_on:
+      - db
+    volumes:
+      - ./src:/app/src
+      - ./private.pem:/app/private.pem 
+      - ./public.pem:/app/public.pem 
+    ports:
+      - 8000:8000
+    restart: always
+    env_file:
+      - .env
+  db:
+    container_name: postgres
+    image: postgres
+    environment:
+      - POSTGRES_DB=event
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Cvjnhtnm
+    ports:
+      - 5433:5432
+    volumes:
+      - .postgres:/var/lib/postgres/data
+    restart: always

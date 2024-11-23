@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "event-booking"
+version = "0.1.0"
+description = "test project"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+sqlalchemy = "^2.0.36"
+pydantic = "^2.10.1"
+pydantic-settings = "^2.6.1"
+pyjwt = "^2.10.0"
+bcrypt = "^4.2.1"
+uvicorn = "^0.32.1"
+asyncpg = "^0.30.0"
+psycopg-binary = "^3.2.3"
+psycopg = "^3.2.3"
+email-validator = "^2.2.0"
+python-multipart = "^0.0.17"
+greenlet = "^3.1.1"
+cryptography = "^43.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+src/__pycache__
+src/auth/__pycache__
+src/database/__pycache__
+src/database/queries/__pycache__
+src/models/__pycache__
+src/routes/__pycache__
+.venv
+.postgres
+__pycache__
+private.pem
+public.pem
+
